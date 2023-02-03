@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Міміно</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon/favicon-mimino.png"
+    />
+
+    <!-- Base styles -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+
+    <!-- slick css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Base JS -->
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header room-header" id="header">
+      <include src="./partials/header.html"></include>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <include src="./partials/pages/room/hero.html"></include>
+      <include src="./partials/pages/room/amenities.html"></include>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <include src="./partials/footer.html"></include>
+    </footer>
+
+    <!-- Modal windows -->
+    <include src="./partials/modals/book-room.html"></include>
+    <include src="./partials/modals/room-price.html"></include>
+
+    <!-- overlay for modal windows -->
+    <div class="overlay js-overlay-modal"></div>
+
+    <!-- scroll to top -->
+    <include src="./partials/components/scroll-up.html"></include>
+
+    <!-- JS -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/room-hero.js"></script>
+  </body>
+</html>

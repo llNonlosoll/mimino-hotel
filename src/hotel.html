@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Міміно</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon/favicon-mimino.png"
+    />
+
+    <!-- swiper styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Base styles -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Base JS -->
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header" id="header">
+      <include src="./partials/header.html"></include>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <include src="./partials/pages/hotel/hero.html"></include>
+      <include src="./partials/pages/hotel/grand-suite.html"></include>
+      <include src="./partials/pages/hotel/large-suite.html"></include>
+      <include src="./partials/pages/hotel/classic-suite.html"></include>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <include src="./partials/footer.html"></include>
+    </footer>
+
+    <!-- Modal windows -->
+    <include src="./partials/modals/book-room.html"></include>
+    <include src="./partials/modals/room-price.html"></include>
+
+    <!-- overlay for modal windows -->
+    <div class="overlay js-overlay-modal"></div>
+
+    <!-- scroll to top -->
+    <include src="./partials/components/scroll-up.html"></include>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="./js/swiper-grand-suite.js"></script>
+    <script src="./js/swiper-large-suite.js"></script>
+    <script src="./js/swiper-classic-suite.js"></script>
+  </body>
+</html>
