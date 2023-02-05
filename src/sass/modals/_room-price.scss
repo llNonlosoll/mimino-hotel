@@ -136,6 +136,7 @@
   display: flex;
 
   justify-content: space-between;
+  gap: 10px;
 
   @media screen and (max-width: 1023.98px) {
     display: block;
@@ -176,8 +177,6 @@ select.modal-field {
 }
 
 .modal-field {
-  height: 54px;
-
   margin-bottom: 8px;
   padding: 12px;
 
@@ -199,9 +198,6 @@ select.modal-field {
   &:hover,
   &:focus {
     outline: 2px solid $accent-text-color;
-  }
-  @media screen and (min-width: 1024px) {
-    height: 64px;
   }
 }
 
